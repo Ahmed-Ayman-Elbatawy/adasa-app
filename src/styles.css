@@ -1,3 +1,111 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import 'flowbite/src/themes/default';
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
 @import 'tailwindcss';
+
+@font-face {
+  font-family: 'tajwal';
+  src: url(/fonts/Tajawal-Regular.ttf) format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'tajwal';
+  src: url(/fonts/Tajawal-Bold.ttf) format('truetype');
+  font-weight: 900;
+}
+
+body {
+  font-family: 'tajwal', sans-serif;
+  font-weight: 900;
+}
+
+.btn-primary {
+  cursor: pointer;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  color: white;
+  transition-property: all;
+  transition-duration: 0.3s;
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  border-radius: 2.375rem;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.3s;
+  display: inline-flex;
+}
+
+.btn-secondary {
+  cursor: pointer;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  color: white;
+  transition-property: all;
+  transition-duration: 0.3s;
+  background-color: #0000;
+  border: 1px solid #333;
+  border-radius: 3.40282e38px;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.3s;
+  display: inline-flex;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+.btn-secondary:hover {
+  color: #f97316;
+  background: #f973161a;
+  border-color: #f97316;
+}
+
+.glass-card {
+  border-radius: 1.5rem;
+  -webkit-backdrop-filter: blur(20px);
+  background: #161616cc;
+  border: 1px solid #262626;
+}
+
+.gradient-text {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(135deg, #f97316, #fbbf24);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.section-label {
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  color: #f97316;
+  background: #f973161a;
+  border: 1px solid #f973164d;
+  border-radius: 2.375rem;
+  display: inline-flex;
+}
+
+.card {
+  border-radius: 1.5rem;
+  transition-property: all;
+  --tw-duration: 0.5s;
+  background: #161616;
+  border: 1px solid #262626;
+  transition-duration: 0.5s;
+  overflow: hidden;
+}
+
+.card:hover {
+  border-color: #333;
+  transform: translateY(-4px);
+}
+
+.section-subtitle {
+  margin-top: calc(var(--spacing) * 4);
+  font-size: var(--text-lg);
+  line-height: var(--tw-leading, var(--text-lg--line-height));
+  --tw-leading: var(--leading-relaxed);
+  line-height: var(--leading-relaxed);
+  color: var(--color-neutral-400);
+}
