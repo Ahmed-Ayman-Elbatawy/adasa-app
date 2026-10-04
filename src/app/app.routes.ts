@@ -15,5 +15,6 @@ export const routes: Routes = [
   { path: 'about', component: AboutUs },
   { path: 'privacy', component: Privacy },
   { path: 'terms', component: Terms },
-  { path: '**', component: NotFound },
+  { path: 'notfound', component: NotFound },
+  { path: '**', redirectTo: 'notfound' },
 ];
