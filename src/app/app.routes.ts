@@ -9,12 +9,12 @@ import { Terms } from './terms/terms';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: Home },
-  { path: 'blog', component: Blog },
-  { path: 'blog/:slug', component: Article },
-  { path: 'about', component: AboutUs },
-  { path: 'privacy', component: Privacy },
-  { path: 'terms', component: Terms },
-  { path: 'notfound', component: NotFound },
+  { path: 'home', component: Home, title: 'عدسة-عالم التصوير-الرئيسية' },
+  { path: 'blog', component: Blog, title: 'عدسة-عالم التصوير-المدونة' },
+  { path: 'blog/:slug', component: Article, title: 'عدسة-عالم التصوير-المقال' },
+  { path: 'about', component: AboutUs, title: 'عدسة-عالم التصوير-من نحن' },
+  { path: 'privacy', component: Privacy, title: 'عدسة-عالم التصوير-الخصوصية' },
+  { path: 'terms', component: Terms, title: 'عدسة-عالم التصوير-الشروط والأحكام' },
+  { path: 'notfound', component: NotFound, title: 'عدسة-عالم التصوير-الصفحة غير موجودة' },
   { path: '**', redirectTo: 'notfound' },
 ];
